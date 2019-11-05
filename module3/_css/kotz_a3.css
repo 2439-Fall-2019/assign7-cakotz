@@ -1,0 +1,25 @@
+/*Collin Kotz
+  INFO1311.PLA
+  trilium.css
+  Olberding
+  9/29/18
+*/
+
+body	
+{
+	font-family: Mansalva, Arial, Helvetica, sans-serif;
+	background-color: #e6e6ff;
+}
+header
+{
+	background-color: e6e600;	
+}
+h1
+{
+	font-family: "Trebuchet MS", sans-serif;
+	color: #a9bbb1;
+}
+li
+{
+	background-color: #91e0e0;
+}

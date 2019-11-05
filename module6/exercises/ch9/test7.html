@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>test7</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="module4/_css/kotz_a5.css"> 
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+		<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>	
+	</head>
+	<body>
+		<!-- Collin Kotz
+			test7.html
+			INFO2439
+			Thoendel
+			10/27/19
+		-->
+
+		<div data-role="page" id="third">
+
+			<div data-role="header">
+				<h1>List Updates</h1>
+			</div>
+	
+			<div role="main" class="ui-content" id="contentDiv">
+				<input type="button" id="testBtn" value="Add It">
+			</div>
+		</div>
+
+		<script>
+			$("#testBtn").click(function() {
+				var html="<ul data-role='listview' data-insert='true' id='theList'>"+"<li>Item One</li><li>Item Two</li></ul>";
+				$("#contentDiv").append(html);
+				$("#theList").listview();
+			});
+		</script>
+	</body>
+</html>

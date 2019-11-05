@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>form</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="module4/_css/kotz_a5.css"> 
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+		<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body>
+		<!-- Collin Kotz
+			form.html
+			INFO2439
+			Thoendel
+			10/22/19
+		-->
+		
+		<div data-role="header">
+            <h1>Form Test</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+            <div data-role="fieldcontain">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" value=""/>
+            </div>
+
+            <div data-role="fieldcontain">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" value="" class="boring"/>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            $(document).bind("mobileinit", function(){
+                $.mobile.keepNative = "input.boring";
+            });
+        </script>
+	</body>
+</html>
